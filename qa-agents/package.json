@@ -1,0 +1,30 @@
+{
+  "name": "qa-agents",
+  "version": "1.0.0",
+  "description": "4-Agent QA System for Automated API Testing with OpenAPI 3.1.0",
+  "main": "index.js",
+  "bin": {
+    "qa-test": "./index.js"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "test": "node index.js test",
+    "test:service": "node index.js test --service",
+    "test:gaming-deposit": "node gaming-deposit-test.js",
+    "list": "node index.js list",
+    "status": "node index.js status"
+  },
+  "keywords": ["qa", "testing", "api", "openapi", "newman", "postman", "automation"],
+  "author": "QA Team",
+  "license": "MIT",
+  "type": "commonjs",
+  "dependencies": {
+    "@apidevtools/swagger-parser": "^12.1.0",
+    "chalk": "^5.6.2",
+    "newman": "^6.2.2",
+    "newman-reporter-htmlextra": "^1.23.1",
+    "ora": "^9.4.0",
+    "postman-collection": "^5.3.0",
+    "swagger-parser": "^10.0.3"
+  }
+}

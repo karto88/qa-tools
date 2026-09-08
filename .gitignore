@@ -1,0 +1,60 @@
+# Separate repos (own remotes — not part of this repo)
+ITALY/
+Admin - Playwright/
+
+# Node modules
+node_modules/
+package-lock.json
+
+# QA Agents
+qa-agents/node_modules/
+qa-agents/package-lock.json
+
+# Cypress
+cypress/node_modules/
+cypress/package-lock.json
+cypress/videos/
+cypress/screenshots/
+
+# Test Reports (generated files)
+postman/reports/*.html
+postman/reports/*.json
+postman/reports/*.xml
+
+# Environment files with secrets
+postman/environments/*local*.json
+postman/environments/*secret*.json
+*.env
+*.env.local
+.env
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# Coverage
+coverage/
+.nyc_output/
+
+# Claude local settings (keep shared settings)
+.claude/settings.local.json
